@@ -2,7 +2,6 @@ exports.config = {
   "modules": [
     "copy",
     "server",
-    "jshint",
     "csslint",
     "require",
     "minify-js",

@@ -11,7 +11,7 @@ exports.config = {
   and do not need to be installed. If a module is listed here that Mimosa is unaware of, Mimosa
   will attempt to install it.
   ###
-  modules: ["server","minify-js","minify-css","jshint","csslint","live-reload","require","bower","copy","coffeescript","sass"]
+  modules: ["server","minify-js","minify-css","jshint","csslint","live-reload","require","bower","copy","coffeescript","hogan","sass"]
 
   # watch:
     # sourceDir: "assets"                # directory location of web assets, can be relative to
@@ -311,6 +311,11 @@ exports.config = {
     # options:                 # options for the CoffeeScript compiler
       # sourceMap:true         # whether or not to create source maps
       # bare:true              # whether or not to use the default safety wrapper
+	
+
+  # hogan:               # config settings for the Hogan compiler module
+    # lib: undefined    # use this property to provide a specific version of Hogan
+    # extensions: ["hog", "hogan", "hjs"]  # default extensions for Hogan files
 	
 
   # sass:                  # config settings for the SASS compiler module

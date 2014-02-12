@@ -1,9 +1,9 @@
-define ['jquery'], ($) ->
+define ['jquery', 'templates'], ($, templates) ->
 
   class ExampleView
 
     render: (element) ->
-      $(element).append "<div class='name'>This is coming directly from a view, not from a micro template.</div>"
-      $(element).append "<div class='styled'>And its all been styled (poorly) using sass</div>"
+      $(element).append templates.example.render({name:'Hogan', css:'sass'}, templates)
+      $(element).append templates['another-example'].render({name:'Hogan'}, templates)
 
   ExampleView

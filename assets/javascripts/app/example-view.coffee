@@ -1,9 +1,4 @@
-define ['jquery', 'templates'], ($, templates) ->
+define [], () ->
 
-  class ExampleView
-
-    render: (element) ->
-      $(element).append templates.example.render({name:'Hogan', css:'sass'}, templates)
-      $(element).append templates['another-example'].render({name:'Hogan'}, templates)
-
-  ExampleView
+  ({first, last}) ->
+    div "#{last}, #{first}"

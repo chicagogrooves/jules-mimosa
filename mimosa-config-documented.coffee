@@ -11,7 +11,7 @@ exports.config = {
   and do not need to be installed. If a module is listed here that Mimosa is unaware of, Mimosa
   will attempt to install it.
   ###
-  modules: ["server","minify-js","minify-css","jshint","csslint","live-reload","require","bower","copy","coffeescript","ractive","sass"]
+  modules: ["server","minify-js","minify-css","jshint","csslint","live-reload","require","bower","copy","coffeescript","sass"]
 
   # watch:
     # sourceDir: "assets"                # directory location of web assets, can be relative to
@@ -311,11 +311,6 @@ exports.config = {
     # options:                 # options for the CoffeeScript compiler
       # sourceMap:true         # whether or not to create source maps
       # bare:true              # whether or not to use the default safety wrapper
-	
-
-  # ractive:               # config settings for the Ractive compiler module
-    # lib: undefined       # use this property to provide a specific version of Ractive
-    # extensions: ["rtv","rac"]  # default extensions for Ractive files
 	
 
   # sass:                  # config settings for the SASS compiler module

@@ -1,20 +1,9 @@
-define ['jquery', 'vendor/ractive', 'templates'], ($, Ractive, templates) ->
+define ['jquery'], ($) ->
 
   class ExampleView
 
     render: (element) ->
-      $(element).append("<div id='ractive1'></div>")
-      $(element).append("<div id='ractive2'></div>")
-      new Ractive
-        el: '#ractive1'
-        template: templates.example
-        partials: templates
-        data:
-          name:'Ractive'
-          css:'sass'
+      $(element).append "<div class='name'>This is coming directly from a view, not from a micro template.</div>"
+      $(element).append "<div class='styled'>And its all been styled (poorly) using sass</div>"
 
-      new Ractive
-        el: '#ractive2'
-        template: templates['another-example']
-        data:
-          name:'Ractive'
+  ExampleView

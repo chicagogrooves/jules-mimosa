@@ -10,13 +10,12 @@ exports.config = {
     "live-reload",
     "bower",
     "coffeescript",
-    "sass",
-    "ractive"
+    "sass"
   ],
   "server": {
     "views": {
-      "compileWith": "handlebars",
-      "extension": "hbs"
+      "compileWith": "html",
+      "extension": "html"
     }
   }
 }
